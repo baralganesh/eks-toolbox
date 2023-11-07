@@ -6,6 +6,7 @@ This Dockerfile is intended to build an image that facilitates the streamlined m
 <b>Note: </b>Before building the Docker image, ensure you have the necessary credentials and configurations for AWS access and proper setup for Terraform and EKS integration within the container.
 <h1> HOW TO> </h1>
 # Build Docker image based on above file
+
 docker build -t toolbox:1.24 .
 
 # Push new image
