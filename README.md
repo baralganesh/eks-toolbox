@@ -13,7 +13,7 @@ docker build -t toolbox:1.24 .
 docker push <dockerid>/toolbox:1.24
 
 # Volume to mount = tools-box
-docker run -d --name toolbox-lower-1.24--volume /home/docker/toolbox:/tools-box --volume /var/run/docker.sock:/var/run/docker.sock -i -t bku-tools.jfrog.io/toolbox:1.24
+docker run -d --name toolbox-lower-1.24--volume /home/docker/toolbox:/tools-box --volume /var/run/docker.sock:/var/run/docker.sock -i -t toolbox:1.24
 
 # Login and use
 sudo docker exec -it toolbox-lower-1.24 /bin/bash
